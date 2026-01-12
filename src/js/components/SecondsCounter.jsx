@@ -1,10 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// Este componente recibe 'seconds' como prop
 const SecondsCounter = (props) => {
-    // Lógica para separar el número en dígitos individuales
-    // Ejemplo: 3434 -> [0, 0, 3, 4, 3, 4]
     const digit6 = Math.floor(props.seconds / 100000) % 10;
     const digit5 = Math.floor(props.seconds / 10000) % 10;
     const digit4 = Math.floor(props.seconds / 1000) % 10;
